@@ -3,9 +3,9 @@
 class Shoe:
     def __init__(self, brand, size):
         self.brand = brand
-        self._size = None  # Use a private attribute to enforce validation
-        self.size = size  # Use the setter to initialize size
-        self.condition = None  # Initialize condition as None
+        self._size = None  
+        self.size = size  
+        self.condition = None  
 
     @property
     def size(self):
@@ -20,6 +20,6 @@ class Shoe:
 
     def cobble(self):
         print("Your shoe is as good as new!")
-        self.condition = "New"  # Set condition to "New" after repair
+        self.condition = "New"
 
     pass

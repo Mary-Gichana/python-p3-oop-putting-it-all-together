@@ -3,8 +3,8 @@
 class Book:
     def __init__(self, title, page_count):
         self.title = title
-        self._page_count = None  # Use a private attribute to enforce validation
-        self.page_count = page_count  # Use the setter to initialize page_count
+        self._page_count = None  
+        self.page_count = page_count  
 
     @property
     def page_count(self):
